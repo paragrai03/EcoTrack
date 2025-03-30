@@ -1,0 +1,12 @@
+specVersion: "v1"
+serviceId: "ecotrack"
+location: "us-central1"
+schema:
+  source: "./schema"
+  datasource:
+    postgresql:
+      database: "fdcdb"
+      cloudSql:
+        instanceId: "ecotrack-fdc"
+      # schemaValidation: "COMPATIBLE"
+connectorDirs: ["./connector"]
